@@ -35,13 +35,14 @@ It is built with MERN ( MongoDB , Express , React , NodeJS ) and Figma for desig
 
 Figma Design
 
-https://github.com/user-attachments/assets/348fca5c-b3d1-43e6-9c84-21c18a0c0c01
+https://github.com/user-attachments/assets/29133d61-166f-40ab-a794-d00f2ffa39de
+
 
 Login/Register
 
-https://github.com/user-attachments/assets/210a6e58-39a5-4ee8-a8bb-e073f4fe006c
+https://github.com/user-attachments/assets/3c50d796-9d6b-4ba2-958f-a791755517fe
 
 
 Landing Page
 
-https://github.com/user-attachments/assets/c1a78f7c-c44d-4958-89d1-4b76841fd18d
+https://github.com/user-attachments/assets/53534ec6-5349-4ad1-9b69-1b45a2e89efc
