@@ -27,7 +27,7 @@ It is built with MERN ( MongoDB , Express , React , NodeJS ) and Figma for desig
 -   [Express](https://expressjs.com)
 -   [MongoDB](https://www.mongodb.com)
 -   [JWT](https://jwt.io)
--   Figma(https://www.figma.com)
+-   [Figma](https://www.figma.com)
 
 <hr>
 
