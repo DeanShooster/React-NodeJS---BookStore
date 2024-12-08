@@ -32,3 +32,16 @@ It is built with MERN ( MongoDB , Express , React , NodeJS ) and Figma for desig
 <hr>
 
 <h2 align="center">Demo Video</h2>
+
+Figma Design
+
+https://github.com/user-attachments/assets/348fca5c-b3d1-43e6-9c84-21c18a0c0c01
+
+Login/Register
+
+https://github.com/user-attachments/assets/210a6e58-39a5-4ee8-a8bb-e073f4fe006c
+
+
+Landing Page
+
+https://github.com/user-attachments/assets/c1a78f7c-c44d-4958-89d1-4b76841fd18d
