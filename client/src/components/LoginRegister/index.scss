@@ -1,0 +1,141 @@
+@import "../../styles/global.scss";
+
+.login-register-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  background-color: $main-bg;
+
+  width: 500px;
+  padding: 20px;
+
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgb(153, 153, 153);
+
+  animation: drop-down 0.4s linear;
+
+  .close-login-register-wrapper {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    padding: 4px 8px;
+
+    background-color: $main-text-color;
+    color: $sub-text-color;
+    font-weight: bold;
+
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $sub-theme-color;
+    }
+  }
+
+  h2 {
+    margin: 0 0 24px 0;
+
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+  }
+
+  form {
+    display: flex;
+    flex-flow: column;
+    row-gap: 12px;
+
+    & > div {
+      display: flex;
+      flex-flow: column;
+      row-gap: 4px;
+
+      label {
+        font-size: 14px;
+        color: #c5c5c5;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      input {
+        padding: 12px;
+
+        border-radius: 6px;
+
+        letter-spacing: 1px;
+
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          opacity: 75%;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    a {
+      width: fit-content;
+
+      margin-left: auto;
+
+      text-decoration: none;
+      color: $sub-theme-color;
+      letter-spacing: 1px;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      @include button($sub-theme-color, $sub-text-color);
+
+      width: 75%;
+      margin: 32px auto 0 auto;
+    }
+
+    .error {
+      color: rgb(255, 56, 56);
+      text-align: center;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+  }
+
+  .login-register-texts {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+
+    font-weight: bold;
+
+    & > span:nth-child(2) {
+      color: $sub-theme-color;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@keyframes drop-down {
+  0% {
+    transform: translateY(-500px) translate(-50%, -50%);
+  }
+  80% {
+    transform: translateY(20px) translate(-50%, -50%);
+  }
+  100% {
+    transform: translateY(0) translate(-50%, -50%);
+  }
+}

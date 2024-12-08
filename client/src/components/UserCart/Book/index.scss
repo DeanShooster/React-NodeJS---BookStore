@@ -1,0 +1,14 @@
+.book-wrapper {
+  position: relative;
+
+  button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+      transform: scale(1.05) translateX(-50%);
+    }
+  }
+}

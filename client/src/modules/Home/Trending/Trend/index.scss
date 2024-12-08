@@ -1,0 +1,53 @@
+@import "../../../../styles/global.scss";
+
+.trend-wrapper {
+  display: flex;
+  column-gap: 10px;
+
+  .trend-information {
+    width: 20px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    row-gap: 10px;
+
+    & > span:nth-child(1) {
+      transform: rotate(-90deg);
+
+      white-space: nowrap;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    & > span:nth-child(2) {
+      color: $sub-theme-color;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  .trend-image {
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      transition: 0.3s;
+    }
+
+    img {
+      width: 230px;
+      height: 270px;
+
+      box-shadow: 0 0 15px 0 black;
+
+      border-radius: 2px;
+
+      @media (max-width: $laptop) {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+}

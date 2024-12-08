@@ -1,0 +1,21 @@
+@import "../../../styles/global.scss";
+
+.trending-container {
+  h2 {
+    color: $sub-theme-color;
+    letter-spacing: 1px;
+  }
+
+  & > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+
+    @media (max-width: $laptop) {
+      justify-content: space-around;
+      gap: 24px;
+    }
+  }
+}

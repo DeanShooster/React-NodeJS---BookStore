@@ -1,0 +1,65 @@
+@import "../../../../styles/global.scss";
+
+.book-item-wrapper {
+  .book-item-information {
+    padding: 6px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-weight: bold;
+    }
+
+    & > span:nth-child(2) {
+      color: #00ff00;
+    }
+  }
+
+  .book-item-image-wrapper {
+    position: relative;
+
+    & > img {
+      width: 250px;
+      height: 270px;
+
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.2);
+
+      @media (max-width: $laptop) {
+        width: 175px;
+        height: 190px;
+      }
+    }
+
+    button {
+      @include button($sub-theme-color, $sub-text-color);
+
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translate(-50%);
+
+      width: fit-content;
+      padding: 8px 12px;
+
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+        transform: translate(-50%) scale(1.05);
+        transition: 0.3s;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        color: $sub-text-color;
+        white-space: nowrap;
+      }
+    }
+  }
+}

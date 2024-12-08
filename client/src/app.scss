@@ -1,0 +1,26 @@
+@import "./styles/global.scss";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: $main-bg;
+  color: $main-text-color;
+}
+
+.app {
+  width: 90%;
+  margin: 0 auto;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+
+  font-family: $main-font;
+}

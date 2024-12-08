@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$main-font: "Inter", sans-serif;
+
+//*********************************************** Color Themes **********************************************\\
+
+$main-bg: #201f31;
+$main-text-color: #fff;
+$sub-text-color: #000000;
+$sub-theme-color: #ffbade;
+
+//*********************************************** Media / General **********************************************\\
+
+$laptop: 1250px;
+$mobile: 700px;
+
+//*********************************************** Mixin **********************************************\\
+
+@mixin button($bg-color, $text-color) {
+  padding: 8px 24px;
+
+  background-color: $bg-color;
+  color: $text-color;
+
+  border: none;
+  border-radius: 12px;
+
+  font-family: $main-font;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}

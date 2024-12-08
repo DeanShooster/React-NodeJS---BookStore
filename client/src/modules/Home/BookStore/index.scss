@@ -1,0 +1,21 @@
+@import "../../../styles/global.scss";
+
+.book-store-container {
+  margin-bottom: 48px;
+
+  h2 {
+    color: #ffbade;
+    letter-spacing: 1px;
+  }
+
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    row-gap: 32px;
+
+    @media (max-width: $laptop) {
+      justify-content: space-evenly;
+    }
+  }
+}

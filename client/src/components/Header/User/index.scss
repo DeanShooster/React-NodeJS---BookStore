@@ -1,0 +1,9 @@
+@import "../../../styles/global.scss";
+
+.user-wrapper {
+  margin: 0 0 0 auto;
+
+  button {
+    @include button($sub-theme-color, $sub-text-color);
+  }
+}

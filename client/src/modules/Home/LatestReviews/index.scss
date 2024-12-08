@@ -1,0 +1,41 @@
+@import "../../../styles/global.scss";
+
+.latest-reviews-section {
+  margin-top: 40px;
+
+  display: flex;
+  column-gap: 20px;
+
+  background: linear-gradient(90deg, #201f31 10%, #2f2e4b 70%);
+
+  .woman-review-img {
+    img {
+      width: 200px;
+      height: 195px;
+
+      @media (max-width: $laptop) {
+        width: 150px;
+        height: 175px;
+      }
+    }
+  }
+
+  .latest-reviews-container {
+    width: 100%;
+
+    h2 {
+      margin: 0 0 20px 0;
+    }
+
+    & > div {
+      display: flex;
+      column-gap: 64px;
+      row-gap: 24px;
+      flex-wrap: wrap;
+
+      @media (max-width: $laptop) {
+        justify-content: space-around;
+      }
+    }
+  }
+}

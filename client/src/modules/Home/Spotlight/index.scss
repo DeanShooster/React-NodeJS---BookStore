@@ -1,0 +1,88 @@
+@import "../../../styles/global.scss";
+
+.spotlight-container {
+  width: 100%;
+
+  position: relative;
+
+  & > img {
+    width: 100%;
+    max-height: 520px;
+  }
+
+  .spotlight-wrapper {
+    max-width: 390px;
+
+    position: absolute;
+    left: 48px;
+    bottom: 48px;
+
+    display: flex;
+    flex-flow: column;
+
+    row-gap: 16px;
+
+    @media (max-width: $laptop) {
+      left: 16px;
+      bottom: 20px;
+
+      row-gap: 8px;
+    }
+
+    span {
+      color: $sub-theme-color;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      margin: 0;
+
+      @media (max-width: $laptop) {
+        font-size: 18px;
+      }
+    }
+
+    div {
+      display: flex;
+      column-gap: 8px;
+
+      p {
+        margin: 0;
+        font-weight: bold;
+
+        @media (max-width: $laptop) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    & > p {
+      margin: 0;
+      word-spacing: 1px;
+
+      @media (max-width: $laptop) {
+        font-size: 14px;
+      }
+    }
+
+    button {
+      @include button($sub-theme-color, $sub-text-color);
+
+      width: fit-content;
+      padding: 8px 12px;
+
+      display: flex;
+      align-items: center;
+
+      & > img {
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        color: $sub-text-color;
+      }
+    }
+  }
+}

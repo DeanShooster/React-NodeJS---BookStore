@@ -1,0 +1,110 @@
+@import "../../styles/global.scss";
+
+.selected-book-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  width: 750px;
+  height: 400px;
+
+  display: flex;
+
+  background-color: $main-bg;
+  box-shadow: 0 0 15px black;
+  outline: 1px solid rgb(71, 82, 148);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  animation: pop-out linear 0.3s;
+
+  .close-modal {
+    position: absolute;
+    top: -5px;
+    right: 0;
+
+    background-color: $sub-theme-color;
+
+    border-radius: 25px;
+  }
+
+  img {
+    max-width: 320px;
+  }
+
+  & > div {
+    padding: 16px;
+
+    display: flex;
+    flex-flow: column;
+
+    & > span:nth-child(1) {
+      margin-left: auto;
+
+      color: #00ff00;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 0;
+
+      text-align: center;
+    }
+    h3 {
+      margin: 12px 0;
+
+      text-align: center;
+      word-spacing: 5px;
+    }
+
+    p {
+      margin: 0;
+
+      word-spacing: 3px;
+      line-height: 22px;
+    }
+
+    .error {
+      margin: 4px 0;
+
+      text-align: center;
+      color: $sub-theme-color;
+    }
+
+    & > div {
+      margin-top: auto;
+
+      display: flex;
+      align-items: center;
+
+      & > button {
+        @include button($sub-theme-color, $sub-text-color);
+
+        margin: auto auto 0 auto;
+
+        width: 185px;
+        height: 70px;
+
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@keyframes pop-out {
+  0% {
+    opacity: 0;
+    width: 0px;
+    height: 0x;
+  }
+  100% {
+    opacity: 100%;
+    width: 750px;
+    height: 400px;
+  }
+}

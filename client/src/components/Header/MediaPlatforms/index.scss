@@ -1,0 +1,28 @@
+.media-platforms-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  span {
+    color: #b0afaf;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  div {
+    display: flex;
+    column-gap: 6px;
+
+    img {
+      transition: 0.5s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.5s;
+      }
+    }
+  }
+}
